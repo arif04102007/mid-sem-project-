@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Note Pad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <select id="language">
+  <option value="en-US">English</option>
+  <option value="hi-IN">Hindi</option>
+  <option value="ta-IN">Tamil</option>
+  <option value="te-IN">Telugu</option>
+   </select>
+
+
+    <div class="container">
+        <h1>🎙️ Speech Pad</h1>
+        <p class="instructions">Commands: "Delete all", "Dark mode", "Light mode", "Stop listening"</p>
+        
+        <textarea id="note-pad" placeholder="Tap the microphone and start speaking..."></textarea>
+        <p id="counter">Words: 0 | Characters: 0</p>
+
+        <div class="controls">
+            <button id="mic-btn" class="mic-btn">
+                <span class="mic-icon">🎤</span>
+            </button>
+            <p id="status-text">Click to start</p>
+        </div>
+        
+
+    </div>
+    <button id="copy-btn">Copy Text</button>
+
+<button id="download-btn">Download Note</button>
+    <script src="script.js"></script>
+</body>
+</html>
